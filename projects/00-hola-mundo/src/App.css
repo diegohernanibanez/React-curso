@@ -28,11 +28,47 @@
 }
 
 .tw-follow-card-btn {
+    cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+}
+
+.tw-follow-card-btn:hover {
+    opacity: .8;
+}
+
+.tw-follow-card-text{
+    display: block;
+}
+
+.tw-follow-card-btn.is-following {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 140px;
+}
+
+.tw-follow-card-btn.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.171);
+    color: red;
+    border: 1px solid red;
+}
+
+.tw-follow-card-btn.is-following:hover .tw-follow-card-text {
+    display: none;
+}
+
+.tw-follow-card-btn.is-following:hover .tw-follow-card-stop-follow {
+    display: block;
+}
+
+.tw-follow-card-stop-follow{
+    display: none;
 }
 
 .App {
